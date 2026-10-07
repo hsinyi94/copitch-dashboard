@@ -1,0 +1,18 @@
+# 安全第一：預設擋掉所有東西，只放行要公開的 HTML
+*
+
+# 放行這些
+!.gitignore
+!README.md
+!index.html
+!update_copitch.py
+!logs/
+logs/*
+!logs/.gitkeep
+
+# 明確再擋一次原始資料（雙保險，避免賣家名單外洩）
+*.xlsx
+*.xls
+*.csv
+*.json
+__pycache__/
